@@ -11,7 +11,7 @@ class Program
         Console.WriteLine("Выберите операцию (1-4):");
         Console.WriteLine("1) Перемешать буквы");
         Console.WriteLine("2) Написать наоборот");
-        //Console.WriteLine("3) Вывести слово дважды");
+        Console.WriteLine("3) Вывести слово дважды");
         //Console.WriteLine("4) Убрать все гласные из слова");
 
         int qwe = int.Parse(Console.ReadLine());
@@ -27,10 +27,10 @@ class Program
                 string reversedWord = Reverse(word);
                 Console.WriteLine(reversedWord);
                 break;
-            //case 3:
-            //    string doubledWord = Double(word);
-            //    Console.WriteLine(doubledWord);
-            //    break;
+            case 3:
+                string doubledWord = Double(word);
+                Console.WriteLine(doubledWord);
+                break;
             //case 4:
             //    string bezglasnWord = Bezglasn(word);
             //    Console.WriteLine(bezglasnWord);
@@ -62,10 +62,10 @@ class Program
         return new string(chars);
     }
 
-    //static string Double(string word)
-    //{
-    //    return word + " " + word;
-    //}
+    static string Double(string word)
+    {
+        return word + " " + word;
+    }
 
     //static string Bezglasn(string word)
     //{
